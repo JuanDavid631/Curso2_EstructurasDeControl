@@ -5,28 +5,26 @@ import javax.swing.*;
 public class Arreglos {
   public static void main(String[] args) {
     String[] arreglo = {"Norte", "Sur", "Este", "Oeste"};
-    int[][] arrDos = {{1, 2, 3}, {4, 5}};
-    int[] arrTres = new int[10];
-    String cad = "";
+    int[][] arregloDos = {{1, 2, 3}, {4, 5}};
+    int[] arregloTres = new int[10];
+    String cadena = "";
+    int ayuda = 0, help = 0;
 
-    for (int i = 0; i < arreglo.length; i++) {
-      cad = cad + arreglo[i] + "\n";
+    for (ayuda = 0; ayuda < arreglo.length; ayuda++) {
+      cadena = cadena + arreglo[ayuda] + "\n";
     }
+    JOptionPane.showMessageDialog(null, cadena);
 
-    JOptionPane.showMessageDialog(null, cad);
-
-    for (int i = 0; i < arrDos.length; i++) {
-      for (int j = 0; j < arrDos[i].length; j++) {
-        cad = cad + arrDos[i][j] + " ";
+    for (ayuda = 0; ayuda < arregloDos.length; ayuda++) {
+      for (help = 0; help < arregloDos[ayuda].length; help++) {
+        cadena = cadena + arregloDos[ayuda][help] + " ";
       }
     }
+    JOptionPane.showMessageDialog(null, cadena);
 
-    JOptionPane.showMessageDialog(null, cad);
-
-    for (int i = 0; i < arrTres.length; i++) {
-      cad = cad + arrTres[i] + " ";
+    for (ayuda = 0; ayuda < arregloTres.length; ayuda++) {
+      cadena = cadena + arregloTres[ayuda] + " ";
     }
-
-    JOptionPane.showMessageDialog(null, cad);
+    JOptionPane.showMessageDialog(null, cadena);
   }
 }
