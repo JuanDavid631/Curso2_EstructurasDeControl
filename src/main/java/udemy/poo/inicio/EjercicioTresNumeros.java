@@ -13,7 +13,6 @@ public class EjercicioTresNumeros {
     int numUno = Integer.parseInt(datoUno),
         numDos = Integer.parseInt(datoDos),
         numTres = Integer.parseInt(datoTres);
-
     if (numUno > numDos) {
       if (numUno > numTres) {
         if (numTres > numDos){
