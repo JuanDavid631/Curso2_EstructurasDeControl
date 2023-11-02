@@ -1,7 +1,6 @@
 package udemy.poo.inicio;
 
 import javax.swing.*;
-
 /*
     Tablas de multiplicar del 1 al 10, el numero lo proporciona el usuario
  */
