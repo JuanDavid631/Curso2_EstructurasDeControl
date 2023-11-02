@@ -11,7 +11,7 @@ public class Arreglos {
     int ayuda = 0, help = 0;
 
     for (ayuda = 0; ayuda < arreglo.length; ayuda++) {
-      cadena = cadena + arreglo[ayuda] + "\n";
+      cadena = cadena + arreglo[ayuda] + " - ";
     }
     JOptionPane.showMessageDialog(null, cadena);
 
