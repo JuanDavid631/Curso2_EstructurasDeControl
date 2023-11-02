@@ -6,7 +6,12 @@ import javax.swing.*;
  */
 public class CicloDoWhile {
   public static void main(String[] args) {
-    String dato = JOptionPane.showInputDialog(null, "Ingrese un numero: ");
-    int numUno = Integer.parseInt(dato);
+    String dato = JOptionPane.showInputDialog(null, "Ingrese un numero: "), cadena = "";
+    int numUno = Integer.parseInt(dato), multiplo = 1;
+    do {
+      cadena = cadena + numUno + " x " + multiplo + " = " + (numUno * multiplo) + "\n";
+      multiplo++;
+    } while (multiplo <= 10);
+    JOptionPane.showMessageDialog(null, cadena);
   }
 }
