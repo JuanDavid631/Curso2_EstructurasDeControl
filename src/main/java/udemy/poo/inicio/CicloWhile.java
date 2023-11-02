@@ -6,6 +6,13 @@ import javax.swing.*;
  */
 public class CicloWhile {
   public static void main(String[] args) {
-    String dato = JOptionPane.showInputDialog(null, )
+    String dato = JOptionPane.showInputDialog(null, "Ingrese un número para mostrar la tabla de multiplicar: "), cadena = "";
+    int numUno = Integer.parseInt(dato), multiplo = 1;
+    while (multiplo <= 10) {
+      cadena = cadena + numUno + " x " + multiplo + " = " + (numUno * multiplo) + "\n";
+      multiplo += 1;
+      System.out.println(multiplo);
+    }
+    JOptionPane.showMessageDialog(null, cadena);
   }
 }
