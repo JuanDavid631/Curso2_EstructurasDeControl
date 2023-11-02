@@ -11,7 +11,6 @@ public class CicloWhile {
     while (multiplo <= 10) {
       cadena = cadena + numUno + " x " + multiplo + " = " + (numUno * multiplo) + "\n";
       multiplo += 1;
-      System.out.println(multiplo);
     }
     JOptionPane.showMessageDialog(null, cadena);
   }
