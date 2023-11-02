@@ -1,7 +1,6 @@
 package udemy.poo.inicio;
 
 import javax.swing.*;
-
 /*
     Recibir numero por graficos, evaluar si el numero es par o impar, mostrar el resultado en grafico.
  */
