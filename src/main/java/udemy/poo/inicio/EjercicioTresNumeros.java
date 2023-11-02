@@ -14,5 +14,32 @@ public class EjercicioTresNumeros {
         numDos = Integer.parseInt(datoDos),
         numTres = Integer.parseInt(datoTres);
 
+    if (numUno > numDos) {
+      if (numUno > numTres) {
+        if (numTres > numDos){
+          JOptionPane.showMessageDialog(null, "El numero mayor es: " + numUno +
+              "\nEl numero medio es: " + numTres + "\nEl numero menor es: " + numDos);
+        } else {
+          JOptionPane.showMessageDialog(null, "El numero mayor es: " + numUno +
+              "\nEl numero medio es: " + numDos + "\nEl numero menor es: " + numTres);
+        }
+      } else {
+        JOptionPane.showMessageDialog(null, "El numero mayor es: " + numTres +
+            "\nEl numero medio es: " + numUno + "\nEl numero menor es: " + numDos);
+      }
+    } else {
+      if (numDos > numTres) {
+        if (numTres > numUno) {
+          JOptionPane.showMessageDialog(null, "El numero mayor es: " + numDos +
+              "\nEl numero medio es: " + numTres + "\nEl numero menor es: " + numUno);
+        } else {
+          JOptionPane.showMessageDialog(null, "El numero mayor es: " + numDos +
+              "\nEl numero medio es: " + numUno + "\nEl numero menor es: " + numTres);
+        }
+      } else {
+        JOptionPane.showMessageDialog(null, "El numero mayor es: " + numTres +
+            "\nEl numero medio es: " + numDos + "\nEl numero menor es: " + numUno);
+      }
+    }
   }
 }
