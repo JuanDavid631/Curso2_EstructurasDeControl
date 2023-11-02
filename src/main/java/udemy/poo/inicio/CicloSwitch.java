@@ -19,6 +19,13 @@ public class CicloSwitch {
       break;
       case 4: dia = "El día es Jueves";
       break;
+      case 5: dia = "El día es Viernes";
+      break;
+      case 6: dia = "El día es Sábado";
+      break;
+      default: dia = "El día es Domingo";
+      break;
     }
+    JOptionPane.showMessageDialog(null, dia);
   }
 }
